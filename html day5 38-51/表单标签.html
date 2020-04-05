@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <from action="demo.php" method="POST" name="name1">
+
+    </from>
+    <form>
+        <!-- text是文本框 用户可以在里面输入任何文字 -->
+        <!-- value 文本框上默认显示的字符 -->
+        <!-- maxlength 文本框内最多输入的字符长度 -->
+
+        <!-- label标签用于绑定一个表单元素，当点击<label>标签内的文本时，浏览器就会自动将焦点（光标）转到或者选择对应的表单元素上，来增加用户体验。 -->
+
+        <label for="username">用户名:</label>    <!--此处的for属性和下一行的id属性相对应-->
+        <input type="text" name="username" value="请输入用户名" maxlength="20" id="username"> <br>
+        <!-- password 输入的值是表示隐藏的小圆点 -->
+        <label for="password">密码：</label>
+        <input type="password" name="pwd" id="password">  <br>
+        <!-- radio 单选按钮 可以实现多选一 -->
+        <!-- name是表单元素的名字，这里性别单选按钮必须有相同的名字，才可以实现多选一 -->
+        <!-- 单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中这个按钮 -->
+        <!-- checked 规定此input元素首次加载时应当被选中该，例如我已阅读并同意该说明 -->
+        性别：<label for="nan">男</label><input type="radio" name="sex" id="nan"> <label for="nv">女</label><input type="radio"name="sex" id="nv" checked="checked">  <br >
+        <!-- checkbox 复选框 可以实现多选 -->
+        爱好：画画<input type="checkbox" name="hobby"> 摄影<input type="checkbox" name="hobby">  编程<input type="checkbox" name="hobby"> <br >
+        <!-- button是一个普通按钮，如免费获取验证码，此按钮不提交数据，后期结合js使用 -->
+         button<input type="button" value="我是一个普通的按钮"> <br>
+         <!-- file可以选择上传本地电脑的文件 -->
+        file<input type="file"> <br>
+        hidden<input type="hidden" value="我被隐藏了"> <br>
+        image<input type="image" > <br>
+        <!-- 提交和重置标签，默认文字为 提交 重置。 也可通过value值设定按钮上的文字-->
+        <!-- submit按钮可以把表单域from里面的表单元素的值提交给后台服务器 -->
+        默认submit <input type="submit"> reset <input type="reset"> <br>
+        自定义submit <input type="submit" value="我是提交"> reset <input type="reset" value="我是重置"> <br>
+
+    </form>
+</body>
+</html>
