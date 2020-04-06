@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用类选择器画三个盒子</title>
+    <style>
+
+        .greenbox {
+             width: 100px;
+             height: 100px;
+             background-color: green;
+        }
+        .redbox {
+             width: 100px;
+             height: 100px;
+             background-color: red;
+        }
+        /* 用多类名标签统一设置第二组盒子长宽 */
+        .box {
+             width: 100px;
+             height: 100px; 
+        }       
+        .gb {
+            background-color: green;
+        }
+        .rb {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="greenbox" ></div>
+    <div class="redbox" ></div>
+    <div class="greenbox" ></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="gb box" ></div>
+    <div class="rb box" ></div>
+    <div class="gb box" ></div>
+
+</body>
+</html>
