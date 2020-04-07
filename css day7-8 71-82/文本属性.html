@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+    <style>
+        /* 文本颜色 */
+        h1 {
+            color:gold;
+        }
+        /* 对齐文本 */
+        .zhong {
+            /* 本质是让h2 class="zhong" 盒子里面的文字水平对齐 */
+            text-align: center;
+        }
+        .zuo {
+            text-align: left;
+        }
+        .you {text-align: right;}
+        /* 文本装饰  重点记住下划线如何添加，如何删除*/
+        .xia {
+            text-decoration: underline;
+        }
+        .shang {
+            text-decoration: overline;
+        }
+        .shanchu {
+            text-decoration: line-through;
+        }
+        /* 给超链接删除下划线，将其text-decoration值设为none */
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        /* 文本缩进 */
+        p {
+            /* text-indent: 20px; 一般来说是缩进两个字符长度，px不好控制，所以有em，em是一个相对单位，就是当前元素1个文字的大小，2em相当于缩进两个字符长度 */
+            text-indent: 2em;
+        }
+        .hangjianjv {
+            line-height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>请设置我的颜色</h1>
+    <h2 class="zhong">居中对齐</h2>
+    <h2 class="zuo">左对齐</h2>
+    <h2 class="you">右对齐</h2>
+    <p class="xia">我有下划线</p>
+    <p class="shang">我有上划线</p>
+    <p class="shanchu">我有删除线</p>
+    <a href="http://baidu.com" target="_blank">百度一下</a>
+
+    <p>我是第一段，我不知道该写些什么，现在是晚上十点，我头好疼，我好累。我好困，但是想把这两节课看完，加油。我又来了，为什么写了这么多还没到第二行。。。。。。</p>
+    <p>我是第二段，我不想写了，所以顺便吃饭开始计划覅是是那次u才能才能发了开始发 就卡了你父母呢方式时刻表票价赧澳门information控件</p>
+    <p>终于到第三段了，其实知道结果了，但是心里还是很慌，后天成绩就出来了，祝我工作顺利！加油</p>
+shezhi
+    <p class="hangjianjv">现在我要示范行间距的设置，行间距分为上间距，文本高度，下间距，若设置行间距为26，而文本大小为16，则上间距为5，下间距也为5。至少需要两行，所以奥斯本曾经辉煌肯定不错擦不出浓缩了差不多不咋地变成开哈案例看不出检查合适的参谋那会如特工他如果突然感觉破坏开发离开大家都感到寂寞是牛人二极管基干民兵上帝苹果【破事儿今日【哦阿济格【日军人而后人给顾客了么给</p>
+</body>
+</html>

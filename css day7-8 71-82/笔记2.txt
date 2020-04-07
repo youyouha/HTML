@@ -1,0 +1,41 @@
+字体属性之字体大小：
+	<p> {
+		font-size: 16px;	谷歌浏览器的默认字体大小为16px
+	        }
+字体属性之字体粗细：
+       <p> {
+         	   /* font-weight: bold; */
+         	   /* 这个700的后面不要跟单位 等价于bold 都是加粗的效果 */
+         	   /* 在实际开发中，我们更提倡使用数字 表示加粗或者变细 */
+         	   font-weight: 700;
+     	 }
+也可以用<strong>和<b>标签。
+   normal：正常字体，相当于number为400。声明此值将取消之前任何设置。
+   bold：粗体。相当于number为700，也相当于<strong>和<b>标签。
+   bolder：特粗体。
+   lighter：细体。
+
+字体属性之文字样式：
+        p {
+            font-style: italic;
+        }
+	  normal：默认值，浏览器会显示标准的字体样式
+	  italic：斜体的字体样式，相当于<em>和<i>标签
+注意：平时我们很少给文字加斜体，反而要给斜体标签<em><i>改为不倾斜字体。
+
+字体复合属性：节约代码
+	body { font：font-style  font-weight font-size/line-height  font-family  }
+	使用font属性时，必须按上面语法格式中的顺序写，不能更换顺序，并且各个属性见以空格隔开
+	不需要设置的属性可以省略（取默认值），但必须保留font-size（大小）和font-family（字体）属性，否则font属性将不起作用
+
+CSS文本属性：
+	（1）文本颜色
+	（2）对齐文本：text-align属性用于设置元素内文本内容的水平对齐方式。       center 居中    left 左对齐（默认值）   right 右对齐
+	（3）装饰文本：text-decoration属性规定添加到文本的修饰。可以给文本添加下划线，删除线，上划线等。
+			none 默认没有装饰线（最常用）
+			underline 下划线，链接a自带下划线（常用）
+			overline 上划线（几乎不用）
+			line-through 删除线（不常用）
+	（4）文本缩进：text-indent属性用来指定文本的第一行的缩进，通常是将段落的首行缩进。
+		        text-indent: 2em;一般来说是缩进两个字符长度，px不好控制，所以有em，em是一个相对单位，就是当前元素1个文字的大小，2em相当于缩进两个字符长度 
+	（5）行间距：line-height属性用于设置行间的距离，课控制文字行与行之间的距离。
